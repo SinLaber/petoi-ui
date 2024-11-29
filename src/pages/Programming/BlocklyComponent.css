@@ -1,0 +1,41 @@
+/* src/components/BlocklyComponent/BlocklyComponent.css */
+.blockly-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.blockly-toolbar {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.blockly-div {
+  width: 100%;
+  height: calc(100% - 50px); /* 使 Blockly 工作区不被工具栏遮挡 */
+  position: relative;
+}
+
+/* 确保拖拽和缩放不会影响工作区布局 */
+.blocklySvg {
+  overflow: hidden;
+}
+
+
+.blockly-toolbar button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.blockly-toolbar button:hover {
+  background-color: #0056b3;
+}
+
